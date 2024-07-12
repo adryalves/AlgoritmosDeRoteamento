@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Controller">
+   <children>
+      <ImageView fitHeight="135.0" fitWidth="102.0" layoutX="81.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@seta.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="183.0" layoutX="331.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@titulo.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="escolha" layoutX="664.0" layoutY="189.0" prefHeight="26.0" prefWidth="217.0" style="-fx-cursor: hand; -fx-background-color: #ff328e;" />
+      <Button fx:id="inicio" layoutX="705.0" layoutY="564.0" mnemonicParsing="false" onAction="#iniciar" prefHeight="118.0" prefWidth="152.0" style="-fx-background-color: transparent; -fx-cursor: hand;">
+         <graphic>
+            <ImageView fitHeight="136.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iniciar.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="497.0" layoutY="22.0" prefHeight="18.0" prefWidth="337.0" text="Pacotes Gerados ate o " textFill="#ff1f87">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font></Label>
+      <Label fx:id="contPacote" layoutX="573.0" layoutY="80.0" prefHeight="39.0" prefWidth="102.0" />
+      <Spinner fx:id="spinner" layoutX="731.0" layoutY="122.0" prefHeight="26.0" prefWidth="84.0" />
+      <ChoiceBox fx:id="origem" layoutX="26.0" layoutY="109.0" prefHeight="26.0" prefWidth="62.0" style="-fx-cursor: hand;" />
+      <ImageView fitHeight="102.0" fitWidth="134.0" layoutX="13.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@origem.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="134.0" layoutX="161.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@destino.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="destino" layoutX="177.0" layoutY="109.0" prefHeight="26.0" prefWidth="70.0" style="-fx-cursor: hand;" />
+      <Label layoutX="755.0" layoutY="91.0" prefHeight="18.0" prefWidth="52.0" text="TTL:" />
+      <Circle fx:id="no8" centerX="130.0" centerY="405.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no12" centerX="234.0" centerY="214.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no3" centerX="550.0" centerY="230.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no7" centerX="640.0" centerY="444.0" fill="#ff1f87" layoutY="9.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no5" centerX="648.0" centerY="324.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no9" centerX="606.0" centerY="567.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no1" centerX="405.0" centerY="172.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no10" centerX="132.0" centerY="295.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no6" centerX="132.0" centerY="519.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no4" centerX="197.0" centerY="636.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no2" centerX="370.0" centerY="674.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Circle fx:id="no11" centerX="513.0" centerY="650.0" fill="#ff1f87" radius="24.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Label layoutX="496.0" layoutY="48.0" prefHeight="18.0" prefWidth="326.0" text="destino final ser alcancado:" textFill="#ff1f87">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
