@@ -12,7 +12,8 @@ Este repositório contém três projetos que simulam diferentes algoritmos de ro
 
 ### Descrição
 
-Este projeto simula o algoritmo de inundação, onde todas as mensagens recebidas são enviadas para todas as direções possíveis, exceto de onde vieram.
+Este projeto simula o algoritmo de inundação, onde todas as mensagens recebidas são enviadas para todas as direções possíveis, exceto de onde vieram. Esse algoritmo por si
+só ele acaba por gerar um número infinito de pacotes. (Usa o TTL para poder evitar isso)
 
 ### Funcionalidades
 
